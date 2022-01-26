@@ -1,0 +1,18 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding-left: 0;
+}
+
+body{
+    display: block;
+    max-width: 100%;
+    font-family: 'Quicksand', sans-serif;
+}
+.Logo{
+    max-width: 100%;
+}
+
+.pro_img{
+    max-width: 100%;
+}
