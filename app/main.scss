@@ -1,18 +1,96 @@
+//variables 
+
+$Champagne: #eee9d3;
+$Darkblue: #161f38;
+$Desertsub: #64180a;
+$redrose: #922c40;
+
+//globals 
+
 *, *::before, *::after {
     box-sizing: border-box;
     margin: 0;
     padding-left: 0;
+    text-decoration: none;
+
+}
+h1,
+h2,
+h3{
+    font-family: 'Hepta Slab', serif;
 }
 
+img{
+    border-radius: 5px;
+}
 body{
     display: block;
     max-width: 100%;
+    line-height: 1.6;
+    font-size: 1.3125rem;
     font-family: 'Quicksand', sans-serif;
+    background-color: $Champagne;
+    color: $Darkblue;
+    display: block;
 }
+
+.Project_wrapper{
+    background-color: $Desertsub;
+    color: $Champagne;
+   
+}
+
+//layout formatting
+
+.front_page{
+    text-align: center;
+    justify-content: center;
+    height: 100vh;
+}
+
 .Logo{
     max-width: 100%;
 }
 
 .pro_img{
     max-width: 100%;
+}
+
+.flex{
+    display: flex;
+}
+
+.container{
+    padding-inline: 1.5rem;
+}
+.intro_list{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%)
+}
+
+//button styles
+
+.button{
+    cursor: pointer;
+    background-color: $Desertsub;
+    align-items: center;
+    width: 9rem;
+    border-radius: 50px;
+    align-items: center;
+    justify-content: center;
+    padding: .5rem 2rem;
+    margin-bottom: .6rem;
+    border: solid 1px $Desertsub;
+    transition: 0.5s;
+    a{
+        color: $Champagne;
+    }
+}
+
+.button:hover{
+    background-color: $Champagne;
+    a{
+        color: $Desertsub;
+    }
 }

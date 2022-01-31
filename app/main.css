@@ -3,12 +3,41 @@
           box-sizing: border-box;
   margin: 0;
   padding-left: 0;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Hepta Slab', serif;
+}
+
+img {
+  border-radius: 5px;
 }
 
 body {
   display: block;
   max-width: 100%;
+  line-height: 1.6;
+  font-size: 1.3125rem;
   font-family: 'Quicksand', sans-serif;
+  background-color: #eee9d3;
+  color: #161f38;
+  display: block;
+}
+
+.Project_wrapper {
+  background-color: #64180a;
+  color: #eee9d3;
+}
+
+.front_page {
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
 }
 
 .Logo {
@@ -17,5 +46,53 @@ body {
 
 .pro_img {
   max-width: 100%;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container {
+  padding-inline: 1.5rem;
+}
+
+.intro_list {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.button {
+  cursor: pointer;
+  background-color: #64180a;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 9rem;
+  border-radius: 50px;
+  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: .5rem 2rem;
+  margin-bottom: .6rem;
+  border: solid 1px #64180a;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.button a {
+  color: #eee9d3;
+}
+
+.button:hover {
+  background-color: #eee9d3;
+}
+
+.button:hover a {
+  color: #64180a;
 }
 /*# sourceMappingURL=main.css.map */

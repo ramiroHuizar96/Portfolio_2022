@@ -1,66 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ramiro Huizar | Frontend Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="./app/main.css">
-    <script src="https://kit.fontawesome.com/142655015c.js" crossorigin="anonymous"></script>
-</head>
-<body>
-    <header>
-        <img src="./images/r2022.png" alt="Logo" class="Logo">
-        <h1>Ramiro Huizar</h1>
-        <span>Frontend Developer</span>
-        <ul>
-            <div class="button"><a href="#">Projects</a></div>
-            <div class="button"><a href="#">Bio</a></div>
-            <div class="button"><a href="#">Contacts</a></div>
-        </ul>
-
-        
-
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hepta+Slab:wght@600&family=Quicksand:wght@400;600&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="./app/main.css" />
+    <script
+      src="https://kit.fontawesome.com/142655015c.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header class="front_page">
+      <img src="./images/RH.png" alt="R.H." class="Logo">
+      <h1 class="heading">Ramiro Huizar</h1>
+      <span>Frontend Developer</span>
+      <ul class="intro_list">
+        <div class="button"><a href="#">Projects</a></div>
+        <div class="button"><a href="#">Bio</a></div>
+        <div class="button"><a href="#">Contacts</a></div>
+      </ul>
     </header>
     <main>
-        <div class="Project_wrapper">
-            <h2>Projects</h2>
-            <div class="project">
-                <h3>Pizzaria Website</h3>
-                <img class="pro_img" src="./images/pizza.jpeg" alt="Pizza">
-                <div class="button"><i class="fab fa-github-square"></i></div>
+      <div class="Project_wrapper container">
+        <h2 class="heading">Projects</h2>
+        <div class="project">
+          <h3>Pizzaria Website</h3>
+          <img class="pro_img" src="./images/pizza.jpeg" alt="Pizza" />
+            <div class="flex">
+                <div class=""><i class="fab fa-github-square"></i></div>
                 <div><a href="#">Visit</a></div>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi quas beatae perspiciatis nihil minima voluptatibus expedita incidunt id a? Voluptas minima vel ipsum doloribus ab autem facere dicta suscipit corrupti!</p>
             </div>
-
-
-
-
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi quas
+            beatae perspiciatis nihil minima voluptatibus expedita incidunt id
+            a? Voluptas minima vel ipsum doloribus ab autem facere dicta
+            suscipit corrupti!
+          </p>
         </div>
-        <div class="bio_wrapper">
-            <h2>Bio</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum facere ipsa repellat animi sit quae vel ratione officia aliquid similique accusamus fuga cupiditate blanditiis autem, officiis, magni voluptatum iusto quam facilis nam minima nostrum qui. Explicabo dolore amet repellat a, veniam nisi cumque, maiores libero inventore sit, debitis earum. Quo fugiat libero eveniet eaque corrupti dolores sint aperiam modi reprehenderit.</p>
+        <div class="project">
+          <h3>Weather App</h3>
+          <img class="pro_img" src="./images/weather.jpeg" alt="Weather" />
+          <div class="flex">
+            <div class=""><i class="fab fa-github-square"></i></div>
+            <div><a href="#">Visit</a></div>
         </div>
-
-        <div class="contact_wrapper">
-            <ul>
-                <div class="button"><i class="fab fa-linkedin"></i></div>
-                <div class="button"><i class="fab fa-instagram-square"></i></div>
-                <div class="button"><i class="fab fa-github-square"></i></div>
-                <div class="button"><i class="fas fa-envelope-square"></i></div>
-            </ul>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi quas
+            beatae perspiciatis nihil minima voluptatibus expedita incidunt id
+            a? Voluptas minima vel ipsum doloribus ab autem facere dicta
+            suscipit corrupti!
+          </p>
         </div>
+      </div>
+      <div class="bio_wrapper container">
+        <h2>Bio</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum facere
+          ipsa repellat animi sit quae vel ratione officia aliquid similique
+          accusamus fuga cupiditate blanditiis autem, officiis, magni voluptatum
+          iusto quam facilis nam minima nostrum qui. Explicabo dolore amet
+          repellat a, veniam nisi cumque, maiores libero inventore sit, debitis
+          earum. Quo fugiat libero eveniet eaque corrupti dolores sint aperiam
+          modi reprehenderit.
+        </p>
+      </div>
 
-
-
-
-
-
-
+      <div class="contact_wrapper container">
+          <h2>Contacts</h2>
+        <ul>
+          <div class=""><i class="fab fa-linkedin"></i></div>
+          <div class=""><i class="fab fa-instagram-square"></i></div>
+          <div class=""><i class="fab fa-github-square"></i></div>
+          <div class=""><i class="fas fa-envelope-square"></i></div>
+        </ul>
+      </div>
     </main>
-   
-</body>
+  </body>
 </html>
