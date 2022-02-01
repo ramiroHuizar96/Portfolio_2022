@@ -28,8 +28,12 @@ body {
 }
 
 .Project_wrapper {
-  background-color: #64180a;
+  background-color: #3d3c06;
   color: #eee9d3;
+}
+
+.margin_bottom {
+  margin-bottom: 1.5rem;
 }
 
 .front_page {
@@ -37,7 +41,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 100vh;
+  position: relative;
 }
 
 .Logo {
@@ -54,20 +58,34 @@ body {
   display: flex;
 }
 
+.vert_center {
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
 .container {
+  position: relative;
   padding-inline: 1.5rem;
 }
 
 .intro_list {
-  position: absolute;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  width: 9rem;
+  margin-inline: auto;
+  margin-bottom: 2.5rem;
+}
+
+.contact_list {
+  margin: 0 auto;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 .button {
+  font-weight: 600;
   cursor: pointer;
-  background-color: #64180a;
+  background-color: #3d3c06;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -79,7 +97,7 @@ body {
           justify-content: center;
   padding: .5rem 2rem;
   margin-bottom: .6rem;
-  border: solid 1px #64180a;
+  border: solid 1.5px #3d3c06;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
@@ -93,6 +111,38 @@ body {
 }
 
 .button:hover a {
-  color: #64180a;
+  color: #3d3c06;
+}
+
+.icon {
+  font-size: 3rem;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.icon a {
+  color: #3d3c06;
+}
+
+.icon:hover a {
+  color: #ee6f1b;
+}
+
+.icon2 {
+  font-size: 3rem;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.icon2 a {
+  color: #eee9d3;
+}
+
+.icon2:hover a {
+  color: #ee6f1b;
+}
+
+.visit a {
+  color: #eee9d3;
 }
 /*# sourceMappingURL=main.css.map */

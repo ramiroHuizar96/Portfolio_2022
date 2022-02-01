@@ -2,8 +2,8 @@
 
 $Champagne: #eee9d3;
 $Darkblue: #161f38;
-$Desertsub: #64180a;
-$redrose: #922c40;
+$Desertsub: #3d3c06;
+$redrose: #ee6f1b;
 
 //globals 
 
@@ -41,11 +41,14 @@ body{
 }
 
 //layout formatting
+.margin_bottom{
+    margin-bottom: 1.5rem;
+}
 
 .front_page{
     text-align: center;
     justify-content: center;
-    height: 100vh;
+    position: relative;
 }
 
 .Logo{
@@ -59,19 +62,28 @@ body{
 .flex{
     display: flex;
 }
+.vert_center{
+    justify-content: space-evenly;
+}
 
 .container{
+    position: relative;
     padding-inline: 1.5rem;
 }
 .intro_list{
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%)
+    width: 9rem;
+    margin-inline: auto;
+    margin-bottom: 2.5rem;
+}
+.contact_list{
+    margin: 0 auto;
+    justify-content: space-evenly;
 }
 
 //button styles
 
 .button{
+    font-weight: 600;
     cursor: pointer;
     background-color: $Desertsub;
     align-items: center;
@@ -81,7 +93,7 @@ body{
     justify-content: center;
     padding: .5rem 2rem;
     margin-bottom: .6rem;
-    border: solid 1px $Desertsub;
+    border: solid 1.5px $Desertsub;
     transition: 0.5s;
     a{
         color: $Champagne;
@@ -92,5 +104,36 @@ body{
     background-color: $Champagne;
     a{
         color: $Desertsub;
+    }
+}
+
+.icon{
+    font-size: 3rem;
+    transition: 0.5s;
+    a{
+        color: $Desertsub;
+    }
+}
+.icon:hover{
+    a{
+        color: $redrose;
+    }
+}
+.icon2{
+    font-size: 3rem;
+    transition: 0.5s;
+    a{
+        color: $Champagne;
+    }
+}
+.icon2:hover{
+    a{
+        color: $redrose;
+    }
+}
+.visit{
+
+    a{
+        color: $Champagne;
     }
 }
