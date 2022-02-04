@@ -1,25 +1,24 @@
 //variables 
 
 $Champagne: #eee9d3;
-$Darkblue: #161f38;
+$Darkblue: #352c05;
 $Desertsub: #3d3c06;
 $redrose: #ee6f1b;
+$secondGreen: #8f8f0e;
 
 //globals 
 
 *, *::before, *::after {
     box-sizing: border-box;
     margin: 0;
-    padding-left: 0;
+    padding: 0;
     text-decoration: none;
-
 }
 h1,
 h2,
 h3{
     font-family: 'Hepta Slab', serif;
 }
-
 img{
     border-radius: 5px;
 }
@@ -41,6 +40,15 @@ body{
 }
 
 //layout formatting
+.project{
+    padding-block-end: 3.5rem;
+}
+h2{
+    padding-block-start: 2rem;
+    margin-block-end: 2rem;
+    border-bottom: solid 2px $secondGreen;
+    max-width: 4rem;
+}
 .margin_bottom{
     margin-bottom: 1.5rem;
 }
@@ -57,6 +65,7 @@ body{
 
 .pro_img{
     max-width: 100%;
+    border: solid 2px $Darkblue;
 }
 
 .flex{
@@ -64,6 +73,7 @@ body{
 }
 .vert_center{
     justify-content: space-evenly;
+    justify-items: end;
 }
 
 .container{
@@ -79,6 +89,9 @@ body{
     margin: 0 auto;
     justify-content: space-evenly;
 }
+.project_btn{
+    max-height: 3rem;
+}
 
 //button styles
 
@@ -89,7 +102,6 @@ body{
     align-items: center;
     width: 9rem;
     border-radius: 50px;
-    align-items: center;
     justify-content: center;
     padding: .5rem 2rem;
     margin-bottom: .6rem;
@@ -103,7 +115,7 @@ body{
 .button:hover{
     background-color: $Champagne;
     a{
-        color: $Desertsub;
+        color: $redrose;
     }
 }
 
@@ -120,6 +132,7 @@ body{
     }
 }
 .icon2{
+    text-align: center;
     font-size: 3rem;
     transition: 0.5s;
     a{
@@ -132,8 +145,19 @@ body{
     }
 }
 .visit{
-
+    font-weight: 600;
+    cursor: pointer;
+    background-color: $Champagne;
+    align-items: center;
+    border-radius: 50px;
+    justify-content: center;
+    border: solid 1.5px $Champagne;
+    transition: 0.5s;
     a{
-        color: $Champagne;
+        color: $Desertsub;
     }
+}
+.pro_img:hover{
+    opacity: .7;
+    border:solid 2px$redrose;
 }
